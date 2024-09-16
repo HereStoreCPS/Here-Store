@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="d-flex justify-content-end mb-3">
+        <a href="/" class="btn btn-transparent btn-close" aria-label="Close"></a>
+    </div>
+    <div class="link-container">
+        <h1 class="text-center">Contact</h1>
+        <div class="list-group">
+            {% for link in links %}
+                <a href="{{ link.url }}" class="list-group-item list-group-item-action link-button btn btn-primary" target="_blank">
+                    <!-- Menambahkan ikon berdasarkan nama tautan -->
+                    {% if link.name == 'WhatsApp' %}
+                        <i class="fab fa-whatsapp icon"></i>
+                    {% elif link.name == 'Discord' %}
+                        <i class="fab fa-discord icon"></i>
+                    {% elif link.name == 'Server and Testimoni' %}
+                        <i class="fab fa-discord icon"></i>
+                    {% endif %}
+                    {{ link.name }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

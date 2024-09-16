@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .link-container {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .link-button {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            height: 150px; /* Tinggi sama dengan lebar untuk memastikan bentuk bulat */
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            margin: 0 auto 50px auto; /* Mengatur margin atas, bawah, dan sisi otomatis untuk memusatkan gambar */
+            display: block; /* Memastikan elemen `img` adalah blok untuk dapat memusatkan dengan margin otomatis */
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button-container {
+            margin: 20px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+        .btn-custom {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-transparent {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+       }
+        .btn-close {
+        color: #000;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

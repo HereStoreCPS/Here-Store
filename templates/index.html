@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+     <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Logo">
+    <h1 class="text-center">Here Store</h1>
+    <div class="button-container">
+        <a href="/about" class="btn btn-primary btn-custom">About Me</a>
+        <a href="/buy-sell" class="btn btn-success btn-custom">List Buy-Sell</a>
+        <a href="/contact" class="btn btn-info btn-custom">Contact</a>
+    </div>
+{% endblock %}

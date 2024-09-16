@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="d-flex justify-content-end mb-3">
+        <a href="/" class="btn btn-transparent btn-close" aria-label="Close"></a>
+    </div>
+    <h1 class="text-center">List Buy-Sell</h1>
+    <div class="row text-center">
+        {% for item in items %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename=item.logo) }}" class="card-img-top" alt="{{ item.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
