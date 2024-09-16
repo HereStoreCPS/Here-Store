@@ -20,5 +20,5 @@ MarkupSafe==2.1.5
 multidict==6.0.5
 requests==2.32.2
 urllib3==2.2.1
-Werkzeug==3.0.3
+Werkzeug==2.3.5
 yarl==1.9.4
